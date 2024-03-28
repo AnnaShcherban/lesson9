@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_9</title>
+  </head>
+  <body>
+    <h1>Задача 6</h1>
+    <p>
+      Дано масив елементів. Усі елементи, які більші за перший елемент помножити
+      на 2
+    </p>
+    <script>
+      let elements = [23, 34, 12, 5, 6]
+      elements.forEach((Element, index, array) => {
+        if (Element >= array[0]) array[index] *= 2
+      })
+      document.write(`${elements}`)
+    </script>
+  </body>
+</html>
